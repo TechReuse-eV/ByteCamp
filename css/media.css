@@ -1,0 +1,495 @@
+/* ==========================================================================
+   byteCamp – Responsive & Media Queries
+   Mobile-First Breakpoints:
+   - sm: 480px
+   - md: 768px
+   - lg: 1024px
+   - xl: 1280px
+   - 2xl: 1536px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Small Mobile (max-width: 479px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 479px) {
+    :root {
+        --container-padding: var(--space-4);
+        --header-height: 100px;
+    }
+
+    html { font-size: 14px; }
+
+    body { padding-top: var(--header-height); }
+
+    .hero__play-btn { width: 80px; height: 80px; }
+    .hero__play-icon { width: 24px; height: 24px; }
+
+    .logo__icon { width: 160px; height: 80px; }
+
+    .hero__scroll-indicator { display: none; }
+
+    .hero__content--above {
+        margin-bottom: var(--space-16);
+        padding: var(--space-6) var(--space-4) 0;
+    }
+
+    .section { padding: var(--space-14) 0; }
+
+    .section__title { font-size: var(--font-size-3xl); }
+    .section__subtitle { font-size: var(--font-size-base); }
+
+    .info-block { padding: var(--space-4); }
+    .info-block__title { font-size: var(--font-size-lg); }
+    .specs { grid-template-columns: 1fr; }
+
+    .galerie__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+        padding: var(--space-3);
+    }
+
+    .galerie__item { aspect-ratio: 16 / 10; }
+
+    .galerie__hub-label {
+        padding: var(--space-3) var(--space-6);
+        font-size: var(--font-size-xl);
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-10);
+    }
+
+    .team-card__avatar-wrapper { width: 140px; height: 140px; }
+
+    .project__grid { grid-template-columns: 1fr; }
+
+    .values { grid-template-columns: 1fr; }
+
+    .mitmachen__grid { grid-template-columns: 1fr; }
+
+    .mitmachen__cta { padding: var(--space-6); }
+
+    .footer__inner {
+        flex-direction: column;
+        gap: var(--space-3);
+        text-align: center;
+    }
+
+    .lightbox__nav--prev { left: var(--space-2); }
+    .lightbox__nav--next { right: var(--space-2); }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile (480px - 767px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 480px) and (max-width: 767px) {
+    :root {
+        --container-padding: var(--space-5);
+        --header-height: 110px;
+    }
+
+    .hero__play-btn { width: 90px; height: 90px; }
+
+    .logo__icon { width: 180px; height: 90px; }
+
+    .hero__content--above {
+        margin-bottom: var(--space-20);
+        padding: var(--space-8) var(--space-5) 0;
+    }
+
+    .galerie__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-3);
+    }
+
+    .galerie__item { aspect-ratio: 4 / 3; }
+
+    .team__grid { grid-template-columns: repeat(2, 1fr); }
+    .team__grid .team-card:last-child { grid-column: 1 / -1; justify-self: center; }
+
+    .project__grid { grid-template-columns: 1fr; }
+
+    .mitmachen__grid { grid-template-columns: repeat(2, 1fr); }
+    .mitmachen__grid .mitmachen-card:last-child { grid-column: 1 / -1; justify-self: center; }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet (768px - 1023px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --container-padding: var(--space-6);
+    }
+
+    .nav__toggle { display: none; }
+
+    .nav__list {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        gap: var(--space-1);
+    }
+
+    .nav__link { padding: var(--space-2) var(--space-4); }
+
+    .logo__icon { width: 200px; height: 100px; }
+
+    .hero__content--above {
+        margin-bottom: var(--space-24);
+        padding: var(--space-10) var(--space-6) 0;
+    }
+
+    .nav__item--social { margin-left: var(--space-4); }
+
+    .hero__title { font-size: var(--font-size-5xl); }
+
+    .infos__grid { grid-template-columns: 1fr; }
+
+    .galerie__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-4);
+    }
+
+    .galerie__item { aspect-ratio: 4 / 3; }
+
+    .team__grid { grid-template-columns: repeat(3, 1fr); }
+
+    .project__grid { grid-template-columns: 1fr; }
+
+    .mitmachen__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop (1024px - 1279px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    :root {
+        --container-padding: var(--space-8);
+        --header-height: 120px;
+    }
+
+    .hero__title { font-size: var(--font-size-5xl); }
+
+    .infos__grid { grid-template-columns: 1fr; }
+
+    .galerie__grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
+
+    .team__grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   Large Desktop (1280px - 1535px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1280px) and (max-width: 1535px) {
+    :root {
+        --container-padding: var(--space-10);
+        --header-height: 120px;
+    }
+
+    .hero__title { font-size: var(--font-size-6xl); }
+
+    .galerie__grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-5); }
+}
+
+/* --------------------------------------------------------------------------
+   2XL (1536px and up)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1536px) {
+    :root {
+        --container-padding: var(--space-12);
+        --header-height: 120px;
+    }
+
+    .container { max-width: 1440px; }
+
+    .galerie__grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-5); }
+}
+
+/* --------------------------------------------------------------------------
+   Navigation Mobile (max-width: 1023px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+    .nav__toggle { display: flex; }
+
+    .logo { margin-left: 0; }
+
+    .nav__list {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(15, 23, 42, 0.99);
+        backdrop-filter: blur(24px);
+        flex-direction: column;
+        padding: var(--space-8) var(--space-6);
+        border-bottom: 1px solid var(--color-border);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-slow);
+        gap: var(--space-3);
+        box-shadow: var(--shadow-xl);
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    .nav__list.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__link {
+        width: 100%;
+        text-align: center;
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+        border-radius: var(--radius-lg);
+        background: var(--color-bg-accent-glow);
+        border: 1px solid var(--color-border);
+        color: var(--color-text-primary);
+    }
+
+    .nav__link:hover,
+    .nav__link:focus {
+        background: var(--color-bg-accent);
+        color: var(--color-bg-deep);
+        border-color: var(--color-bg-accent);
+    }
+
+    .nav__link::after { display: none; }
+
+    .nav__item--social {
+        margin-left: 0;
+        margin-top: var(--space-2);
+    }
+
+    .nav__social {
+        width: 100%;
+        justify-content: center;
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-lg);
+    }
+
+    .nav__social svg { width: 24px; height: 24px; }
+}
+
+/* --------------------------------------------------------------------------
+   Hero Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-height: 600px) and (orientation: landscape) {
+    .section--hero { min-height: auto; padding: var(--space-20) 0; }
+    .hero__scroll-indicator { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   High DPI / Retina
+   -------------------------------------------------------------------------- */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo__icon { image-rendering: crisp-edges; }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced Motion
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .hero__video { animation: none; }
+    body::before { animation: none; }
+    .logo__icon { animation: none; }
+    .logo__icon .logo__sparks .spark { animation: none; }
+    .hero__title { animation: none; }
+    .hero__scroll-indicator { animation: none; }
+    .galerie__hub-badge { animation: none; }
+    .team-card__ring { animation: none; }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: none; } }
+}
+
+/* --------------------------------------------------------------------------
+   Dark Mode (System) - Already default, but explicit for clarity
+   -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Already dark by default */
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Forced Colors / High Contrast
+   -------------------------------------------------------------------------- */
+@media (forced-colors: active) {
+    :root {
+        --color-bg-accent: CanvasText;
+        --color-bg-accent-dim: CanvasText;
+        --color-text-primary: CanvasText;
+        --color-text-secondary: CanvasText;
+        --color-border: CanvasText;
+    }
+
+    .info-block,
+    .team-card__avatar,
+    .modal__container,
+    .modal__close,
+    .lightbox__nav {
+        border: 2px solid CanvasText;
+    }
+
+    .hero__play-btn {
+        border: 2px solid CanvasText;
+    }
+
+    .nav__link:hover,
+    .nav__social:hover {
+        background: Highlight;
+        color: HighlightText;
+    }
+
+    .galerie__hub-label {
+        background: CanvasText;
+        color: Canvas;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Print Styles
+   -------------------------------------------------------------------------- */
+@media print {
+    @page { margin: 2cm; }
+
+    .header, .footer, .nav__toggle, .hero__play-btn, .hero__scroll-indicator,
+    .galerie__hub-badge, .modal, .lightbox__nav { display: none !important; }
+
+    body {
+        padding-top: 0;
+        font-size: 11pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    body::before { display: none; }
+
+    .section { padding: 2rem 0; page-break-inside: avoid; background: none !important; }
+
+    .container { max-width: none; padding: 0; }
+
+    a { text-decoration: underline; color: #000 !important; }
+
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #666; }
+
+    .hero__video-wrapper { display: none; }
+
+    .hero__content { color: #000; }
+    .hero__title { color: #000; text-shadow: none; }
+    .hero__tagline { color: #000; }
+
+    .section__title::after { background: #000; }
+
+    .info-block,
+    .team-card__avatar {
+        break-inside: avoid;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        background: #fff !important;
+    }
+
+    .galerie__grid {
+        display: block;
+    }
+
+    .galerie__item {
+        page-break-inside: avoid;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+    }
+
+    .galerie__item::before { display: none; }
+
+    .galerie__caption {
+        opacity: 1;
+        transform: none;
+        color: #000;
+        text-shadow: none;
+        position: static;
+        padding: 0.5rem;
+    }
+
+    .team-card__avatar {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem;
+    }
+
+    .footer__credit { color: #000; }
+    .footer__author { color: #000; }
+}
+
+/* --------------------------------------------------------------------------
+   Touch Device Optimizations
+   -------------------------------------------------------------------------- */
+@media (hover: none) and (pointer: coarse) {
+    .nav__link,
+    .nav__social,
+    .hero__play-btn,
+    .team-card__avatar,
+    .galerie__item,
+    .modal__close,
+    .lightbox__nav {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .hero__play-btn { min-width: 60px; min-height: 60px; }
+
+    .info-block:hover,
+    .team-card:hover .team-card__avatar,
+    .galerie__item:hover {
+        transform: none;
+        box-shadow: none;
+        border-color: var(--color-border);
+    }
+
+    .info-block:hover { border-color: var(--color-border); }
+    .galerie__item:hover::before { opacity: 0; }
+    .galerie__item:hover .galerie__caption {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .team-card__ring { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Container Queries (Future-proof)
+   -------------------------------------------------------------------------- */
+@container (min-width: 600px) {
+    .galerie__grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   Large Text / Accessibility Zoom
+   -------------------------------------------------------------------------- */
+@media (min-width: 1024px) {
+    html {
+        /* Base 16px, user zoom respected */
+    }
+}
+
+/* Ensure readability at 200% zoom on small screens */
+@media (max-width: 768px) {
+    html { font-size: 16px; }
+}
