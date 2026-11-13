@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jugend IT-Club. Löten, programmieren, reparieren. Für Kinder & Jugendliche.">
+    <meta name="theme-color" content="#0f172a">
+    <title>byteCamp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <a href="#bytecamp" class="skip-link">Zum Hauptinhalt springen</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#bytecamp" class="logo" aria-label="Startseite">
+                <img class="logo__icon" src="assets/img/logo.png" alt="" aria-hidden="true" width="100" height="100" loading="lazy">
+            </a>
+
+            <nav class="nav" aria-label="Hauptnavigation">
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+                    <span class="nav__toggle-icon" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav__list">
+                    <li><a href="#bytecamp" class="nav__link" data-section="bytecamp">byteCamp</a></li>
+                    <li><a href="#project" class="nav__link" data-section="project">das Project</a></li>
+                    <li><a href="#team" class="nav__link" data-section="team">Das Team</a></li>
+                    <li><a href="#galerie" class="nav__link" data-section="galerie">Die Galerie</a></li>
+                    <li><a href="#mitmachen" class="nav__link" data-section="mitmachen">Mitmachen</a></li>
+                    <li><a href="#infos" class="nav__link" data-section="infos">Infos</a></li>
+                    <li class="nav__item--social">
+                        <a href="https://www.facebook.com/TechReUseBerlin/" class="nav__social" target="_blank" rel="noopener" aria-label="byteCamp auf Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- byteCamp Hero Section -->
+        <section id="bytecamp" class="section section--hero" aria-labelledby="bytecamp-title">
+            <div class="container hero__content hero__content--above">
+                <h1 id="bytecamp-title" class="hero__title">byteCamp</h1>
+                <p class="hero__tagline">Dein Hackerspace zum Löten, Coden & Reparieren</p>
+            </div>
+            <div class="hero__video-wrapper">
+                <video class="hero__video" playsinline muted loop autoplay preload="metadata" data-hero-video>
+                    <source src="assets/video/video_2026-11-04_14-14-10.mp4" type="video/mp4">
+                    <!-- Fallback for browsers without video support -->
+                    <img src="assets/img/galerie/01.jpg" alt="" class="hero__fallback" aria-hidden="true">
+                </video>
+                <div class="hero__video-overlay"></div>
+            </div>
+        </section>
+
+        <!-- das Project Section -->
+        <section id="project" class="section section--project" aria-labelledby="project-title">
+            <div class="container">
+                <header class="section__header">
+                    <h2 id="project-title" class="section__title">das Project</h2>
+                    <p class="section__subtitle">Unser Hackerspace – Konzept, Ziele & Vision</p>
+                </header>
+
+                <div class="grid project__grid">
+                    <article class="project-block">
+                        <header class="project-block__header">
+                            <span class="project-block__label">Idee</span>
+                            <h3 class="project-block__title">Was ist das Project?</h3>
+                        </header>
+                        <div class="project-block__content">
+                            <p>byteCamp ist ein offener Hackerspace für junge Menschen, die Technik nicht nur konsumieren, sondern verstehen und gestalten wollen. Hier wird gelötet, programmiert, repariert und experimentiert – gemeinsam, selbstbestimmt und auf Augenhöhe.</p>
+                            <p>Wir bieten Raum, Werkzeug, Wissen und Community. Ob du deinen ersten Mikrocontroller flashst, ein defektes Laptop wiederbelebst oder ein eigenes Game entwickelst: Bei uns findest du Gleichgesinnte und Mentoren, die dich unterstützen.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-block">
+                        <header class="project-block__header">
+                            <span class="project-block__label">Fokus</span>
+                            <h3 class="project-block__title">Schwerpunkte</h3>
+                        </header>
+                        <div class="project-block__content">
+                            <ul class="focus-list">
+                                <li><strong>Repair & Upcycling:</strong> Kaputte Geräte reparieren, Bauteile retten, Müll vermeiden</li>
+                                <li><strong>Creative Coding:</strong> Spiele, Websites, generative Kunst mit Code erschaffen</li>
+                                <li><strong>Hardware & Electronics:</strong> Löten, Schaltungen designen, Mikrocontroller (Arduino, ESP, RPi)</li>
+                                <li><strong>Digital Literacy:</strong> Wie Computer funktionieren, Datenschutz, Open Source, Netzpolitik</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="project-block">
+                        <header class="project-block__header">
+                            <span class="project-block__label">Werte</span>
+                            <h3 class="project-block__title">Was uns antreibt</h3>
+                        </header>
+                        <div class="project-block__content">
+                            <dl class="values">
+                                <div class="values__item">
+                                    <dt>Offenheit</dt>
+                                    <dd>Jeder ist willkommen – unabhängig von Vorkenntnissen, Background oder Alter</dd>
+                                </div>
+                                <div class="values__item">
+                                    <dt>Selbstermächtigung</dt>
+                                    <dd>Technik verstehen statt nur nutzen. Reparieren statt wegwerfen.</dd>
+                                </div>
+                                <div class="values__item">
+                                    <dt>Community</dt>
+                                    <dd>Wissen teilen, voneinander lernen, gemeinsam Projekte rocken</dd>
+                                </div>
+                                <div class="values__item">
+                                    <dt>Nachhaltigkeit</dt>
+                                    <dd>E-Waste reduzieren, Upcycling fördern, ressourcenschonend denken</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="project-block">
+                        <header class="project-block__header">
+                            <span class="project-block__label">Ort</span>
+                            <h3 class="project-block__title">Unser Hub</h3>
+                        </header>
+                        <div class="project-block__content">
+                            <p>Wir treffen uns in unserem Hackerspace im Herzen Berlins – ausgestattet mit Lötstationen, 3D-Druckern, Werkzeug, Bauteillager, Co-Working-Area und Chill-Ecke. Ein Ort zum Machen, nicht nur zum Reden.</p>
+                            <p class="project-block__note"><strong>Öffnungszeiten:</strong> Mi & Fr 15–20 Uhr, Sa 10–16 Uhr (außer Ferien)</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="section section--team" aria-labelledby="team-title">
+            <div class="container">
+                <header class="section__header">
+                    <h2 id="team-title" class="section__title">Das Team</h2>
+                    <p class="section__subtitle">Die Gesichter hinter byteCamp</p>
+                </header>
+
+                <ul class="team__grid" aria-label="Teammitglieder">
+                    <!-- Pascha -->
+                    <li class="team-card">
+                        <div class="team-card__avatar-wrapper">
+                            <div class="team-card__avatar" style="background-image: url('assets/img/team/pascha.jpg');" role="img" aria-label="Pascha in grüner Elfenmütze mit Zuckerstange"></div>
+                            <div class="team-card__ring" aria-hidden="true"></div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Pascha</h3>
+                            <p class="team-card__desc">Immer mit grünem Elfenhut & riesiger Zuckerstange unterwegs. Macht aus jedem Bug ein Feature.</p>
+                        </div>
+                    </li>
+
+                    <!-- Grischa -->
+                    <li class="team-card">
+                        <div class="team-card__avatar-wrapper">
+                            <div class="team-card__avatar" style="background-image: url('assets/img/team/grischa.jpg');" role="img" aria-label="Grischa mit Basecap und Bart, Berliner Skyline mit gelber Tram im Hintergrund"></div>
+                            <div class="team-card__ring" aria-hidden="true"></div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Grischa</h3>
+                            <p class="team-card__desc">Berliner Urgestein mit Basecap & Bart. Kennt jeden Schaltplan – und jede Tram-Linie.</p>
+                        </div>
+                    </li>
+
+                    <!-- Svitlana -->
+                    <li class="team-card">
+                        <div class="team-card__avatar-wrapper">
+                            <div class="team-card__avatar" style="background-image: url('assets/img/team/svitlana.jpg');" role="img" aria-label="Svitlana in rosa Beanie und Sonnenbrille"></div>
+                            <div class="team-card__ring" aria-hidden="true"></div>
+                        </div>
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Svitlana</h3>
+                            <p class="team-card__desc">Rosa Beanie, coole Shades, schärfster Code-Review im Club. Debuggt schneller als ihr Schatten.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Galerie / Unser Hub Section -->
+        <section id="galerie" class="section section--galerie" aria-labelledby="galerie-title">
+            <div class="container-fluid galerie__wrapper">
+                <header class="section__header">
+                    <h2 id="galerie-title" class="section__title">Die Galerie</h2>
+                    <p class="section__subtitle">Eindrücke aus dem byteCamp Hub</p>
+                </header>
+                <ul class="galerie__grid" id="galerie-grid" aria-label="Fotogalerie: Eindrücke aus dem byteCamp Hub">
+                    <li class="galerie__item" data-image="assets/img/galerie/01.jpg">
+                        <img src="assets/img/galerie/01.jpg" alt="Laptop-Reparatur" loading="lazy">
+                        <div class="galerie__caption">Laptop-Reparatur</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/02.jpg">
+                        <img src="assets/img/galerie/02.jpg" alt="Lötstation" loading="lazy">
+                        <div class="galerie__caption">Lötstation</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/03.jpg">
+                        <img src="assets/img/galerie/03.jpg" alt="Motherboard-Diagnose" loading="lazy">
+                        <div class="galerie__caption">Motherboard-Diagnose</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/04.jpg">
+                        <img src="assets/img/galerie/04.jpg" alt="Workshop-Arbeitsplätze" loading="lazy">
+                        <div class="galerie__caption">Workshop-Arbeitsplätze</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/05.jpg">
+                        <img src="assets/img/galerie/05.jpg" alt="Mentoring" loading="lazy">
+                        <div class="galerie__caption">Mentoring</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/06.jpg">
+                        <img src="assets/img/galerie/06.jpg" alt="Minecraft auf CRT" loading="lazy">
+                        <div class="galerie__caption">Minecraft auf CRT</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/07.jpg">
+                        <img src="assets/img/galerie/07.jpg" alt="Bauteile-Sortiment" loading="lazy">
+                        <div class="galerie__caption">Bauteile-Sortiment</div>
+                    </li>
+                    <li class="galerie__item" data-image="assets/img/galerie/08.jpg">
+                        <img src="assets/img/galerie/08.jpg" alt="Team-Meeting" loading="lazy">
+                        <div class="galerie__caption">Team-Meeting</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Mitmachen Section -->
+        <section id="mitmachen" class="section section--mitmachen" aria-labelledby="mitmachen-title">
+            <div class="container">
+                <header class="section__header">
+                    <h2 id="mitmachen-title" class="section__title">Mitmachen</h2>
+                    <p class="section__subtitle">Werde Teil der byteCamp Community</p>
+                </header>
+
+                <div class="grid grid--3 mitmachen__grid">
+                    <article class="mitmachen-card">
+                        <div class="mitmachen-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3 class="mitmachen-card__title">Einfach vorbeikommen</h3>
+                        <p class="mitmachen-card__desc">Keine Anmeldung nötig. Während der Öffnungszeiten (Mi & Fr 15–20 Uhr, Sa 10–16 Uhr) steht die Tür offen. Bring Neugier mit – alles andere ist da.</p>
+                    </article>
+
+                    <article class="mitmachen-card">
+                        <div class="mitmachen-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3 class="mitmachen-card__title">Projekte starten</h3>
+                        <p class="mitmachen-card__desc">Du hast eine Idee? Wir haben Werkzeug, Bauteile und Mentoren. Ob Repair-Café, Game Jam, Hardware-Hackathon oder dein eigenes Ding – wir helfen dir beim Start.</p>
+                    </article>
+
+                    <article class="mitmachen-card">
+                        <div class="mitmachen-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        </div>
+                        <h3 class="mitmachen-card__title">Mentor werden</h3>
+                        <p class="mitmachen-card__desc">Du kennst dich aus mit Code, Hardware, Design oder Pädagogik? Werde Mentor und begleite junge Menschen beim Entdecken der Technik. Wir freuen uns auf dich!</p>
+                    </article>
+                </div>
+
+                <div class="mitmachen__cta">
+                    <h3>Fragen? Schreib uns!</h3>
+                    <p>Du bist dir unsicher oder hast spezielle Fragen? Melde dich einfach per Mail oder komm beim nächsten offenen Termin vorbei.</p>
+                    <a href="mailto:hello@bytecamp.berlin" class="btn btn--primary">hello@bytecamp.berlin</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infos Section -->
+        <section id="infos" class="section section--infos" aria-labelledby="infos-title">
+            <div class="container">
+                <header class="section__header">
+                    <h2 id="infos-title" class="section__title">Infos</h2>
+                    <p class="section__subtitle">Technische Hintergründe & Wissenswertes</p>
+                </header>
+
+                <div class="grid infos__grid">
+                        <article class="info-block">
+                            <header class="info-block__header">
+                                <span class="info-block__label">Grundlage</span>
+                                <h3 class="info-block__title">Die Entstehung einer Legende</h3>
+                            </header>
+                            <div class="info-block__content">
+                                <p>1940–1941: Die britische Beschaffungskommission wandte sich an North American Aviation mit der Bitte, Curtiss P-40 Jäger in Lizenz zu fertigen. Chefingenieur James „Dutch“ Kindelberger schlug jedoch vor, statt der veralteten P-40 einen gänzlich neuen Jagdflugzeug-Typ zu entwickeln – schneller, weiterreichender, moderner.</p>
+                                <p>Das Ergebnis war der NA-73X, der Prototyp, der in rekordverdächtigen 117 Tagen nach Auftragserteilung rollte. Die Briten bestellten 320 Stück, noch bevor der Erstflug stattfand. Der Name: Mustang.</p>
+                            </div>
+                        </article>
+
+                        <article class="info-block">
+                            <header class="info-block__header">
+                                <span class="info-block__label">Studienfach</span>
+                                <h3 class="info-block__title">Rekordentwicklung NA-73X</h3>
+                            </header>
+                            <div class="info-block__content">
+                                <dl class="specs">
+                                    <div class="specs__item">
+                                        <dt>Erstflug</dt>
+                                        <dd>26. Oktober 1940</dd>
+                                    </div>
+                                    <div class="specs__item">
+                                        <dt>Entwicklungszeit</dt>
+                                        <dd>117 Tage</dd>
+                                    </div>
+                                    <div class="specs__item">
+                                        <dt>Triebwerk (Proto)</dt>
+                                        <dd>Allison V-1710-39</dd>
+                                    </div>
+                                    <div class="specs__item">
+                                        <dt>Höchstgeschwindigkeit</dt>
+                                        <dd>615 km/h (Test)</dd>
+                                    </div>
+                                </dl>
+                                <p class="specs__note">Die laminare Flügelprofil-Nachbarschaft (NACA 45-100) war revolutionär für geringen Widerstand bei hohen Geschwindigkeiten.</p>
+                            </div>
+                        </article>
+
+                        <article class="info-block">
+                            <header class="info-block__header">
+                                <span class="info-block__label">Menschen</span>
+                                <h3 class="info-block__title">Der beste Begleiter der Bomber</h3>
+                            </header>
+                            <div class="info-block__content">
+                                <p>Mit dem Rolls-Royce Merlin (später Packard V-1650) wurde der P-51 zum legendären Langstreckenbegleiter. Er konnte B-17 und B-24 bis tief ins Reichgebiet und zurück eskortieren – etwas, das kein anderer alliierter Jäger in dieser Kombination aus Reichweite, Höhe und Leistung vermochte.</p>
+                                <p>Über 15.000 Einheiten wurden gebaut. Der Mustang flog in Korea, diente in Dutzenden Luftwaffen weltweit und dominiert bis heute das Renngeschehen in Reno. Ein Flugzeug, das Geschichte schrieb – nicht durch Glück, sondern durch Ingenieurskunst.</p>
+                            </div>
+                        </article>
+
+                        <article class="info-block">
+                            <header class="info-block__header">
+                                <span class="info-block__label">Kontakten</span>
+                                <h3 class="info-block__title">Von der Insel in die Welt</h3>
+                            </header>
+                            <div class="info-block__content">
+                                <p>Nach Pearl Harbor (Dezember 1941) übernahmen die USAAF die Produktion. Die Briten erhielten ihre Mustangs (Mk Ia, II, III, IV) über Leih- und Pachtgesetz. Amerikanische Einheiten flogen P-51B/C/D/K ab 1943 in Europa, 1944 im Pazifik.</p>
+                                <p>Die Lieferkette spannte sich von den Werken in Inglewood (CA) und Dallas (TX) über den Atlantik bis zu den Basen in East Anglia. Logistik, die funktionierte – weil jedes Teil standardisiert, jeder Handgriff sitzen musste. Wie bei uns im Labor: sauber dokumentiert, nachvollziehbar, reparierbar.</p>
+                            </div>
+                        </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__credit">Made & Programmed by <span class="footer__author">Bogdan I.</span></p>
+            <nav class="footer__legal" aria-label="Rechtliche Hinweise">
+                <a href="/impressum.html">Impressum</a>
+                <span class="footer__sep" aria-hidden="true">|</span>
+                <a href="/datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Modal for Gallery Lightbox -->
+    <div class="modal" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="modal__overlay" tabindex="-1"></div>
+        <div class="modal__container modal__container--lightbox">
+            <button class="modal__close" type="button" aria-label="Lightbox schließen">&times;</button>
+            <figure class="lightbox__figure">
+                <img id="lightbox-img" src="assets/img/galerie/01.jpg" alt="" class="lightbox__image">
+                <div class="lightbox__error" aria-hidden="true">Bild konnte nicht geladen werden</div>
+                <figcaption id="lightbox-title" class="lightbox__caption"></figcaption>
+            </figure>
+            <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Vorheriges Bild">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Nächstes Bild">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
