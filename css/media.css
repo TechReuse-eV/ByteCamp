@@ -63,6 +63,13 @@
     .team-card__avatar-wrapper { width: 140px; height: 140px; }
 
     .project__grid { grid-template-columns: 1fr; }
+    .project-content { gap: var(--space-4); }
+
+    .project-block--hero .project-block__title { font-size: var(--font-size-2xl); }
+    .project-block__tagline { font-size: var(--font-size-base); }
+
+    .project-block { padding: var(--space-4); }
+    .project-block__content h4 { font-size: var(--font-size-base); }
 
     .values { grid-template-columns: 1fr; }
 
@@ -109,6 +116,9 @@
     .team__grid .team-card:last-child { grid-column: 1 / -1; justify-self: center; }
 
     .project__grid { grid-template-columns: 1fr; }
+    .project-content { gap: var(--space-5); }
+
+    .project-block--hero .project-block__title { font-size: var(--font-size-3xl); }
 
     .mitmachen__grid { grid-template-columns: repeat(2, 1fr); }
     .mitmachen__grid .mitmachen-card:last-child { grid-column: 1 / -1; justify-self: center; }
@@ -160,6 +170,9 @@
     .team__grid { grid-template-columns: repeat(3, 1fr); }
 
     .project__grid { grid-template-columns: 1fr; }
+    .project-content { gap: var(--space-6); }
+
+    .project-block--hero .project-block__title { font-size: var(--font-size-4xl); }
 
     .mitmachen__grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -180,6 +193,10 @@
     .galerie__grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
 
     .team__grid { grid-template-columns: repeat(3, 1fr); }
+
+    .project-content { gap: var(--space-6); }
+
+    .project-block--hero .project-block__title { font-size: var(--font-size-5xl); }
 }
 
 /* --------------------------------------------------------------------------

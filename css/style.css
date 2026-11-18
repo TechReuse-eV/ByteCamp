@@ -937,15 +937,102 @@ p {
     line-height: var(--line-height-normal);
 }
 
+/* Detailed team card variant */
+.team-card--detailed .team-card__info {
+    text-align: left;
+    padding: 0;
+}
+
+.team-card--detailed .team-card__desc {
+    margin-bottom: var(--space-3);
+}
+
+.team-card--detailed .team-card__desc:last-child {
+    margin-bottom: 0;
+}
+
+.team-card--detailed .team-card__desc strong {
+    color: var(--color-bg-accent);
+    font-family: var(--font-display);
+}
+
 /* --------------------------------------------------------------------------
    Project Section (das Project)
    -------------------------------------------------------------------------- */
 .section--project { background: var(--color-bg-card); }
 
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+}
+
 .project__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-6);
+}
+
+.project-block--hero {
+    border-color: var(--color-bg-accent);
+    box-shadow: var(--shadow-glow);
+    background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-bg-card) 100%);
+}
+
+.project-block--hero .project-block__header {
+    border-bottom-color: var(--color-bg-accent);
+    text-align: center;
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-5);
+}
+
+.project-block__tagline {
+    font-family: var(--font-mono);
+    font-size: var(--font-size-lg);
+    color: var(--color-bg-accent);
+    font-weight: var(--font-weight-med);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: var(--space-3);
+    opacity: 0.9;
+}
+
+.project-block--hero .project-block__title {
+    font-size: var(--font-size-3xl);
+    background: linear-gradient(135deg, var(--color-text-primary), var(--color-bg-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project-block--cta {
+    border-color: var(--color-spark);
+    background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-bg-card) 100%);
+}
+
+.project-block--cta .project-block__header {
+    border-bottom-color: var(--color-spark);
+}
+
+.project-block__content h4 {
+    font-family: var(--font-display);
+    font-size: var(--font-size-lg);
+    color: var(--color-bg-accent);
+    margin: var(--space-5) 0 var(--space-3);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project-block__content h4:first-child {
+    margin-top: 0;
+}
+
+.project-block__content ul {
+    margin-bottom: var(--space-4);
+}
+
+.project-block__content ul:last-child {
+    margin-bottom: 0;
 }
 
 .project-block {
